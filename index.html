@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Index</title>
+</head>
+<body onload="ocultar();">
+    <div id="division">
+        <h3>Formulario</h3>
+    
+        <form action="" method="post" id="form">
+        
+        <fieldset><legend>Datos Personales</legend>
+        Nombre <br/>
+        <input type="text" name="nombre" id="name" value="" size="30" maxlength="25" />
+        <br/>
+    
+        Apellidos <br/>
+        <input type="text" name="apellidos" id="apellidos" value="" size="30" maxlength="25" />
+        <br/>
+    
+        Email <br/>
+        <input type="email" name="email" id="email" value="" size="50" maxlength="120" />
+        <br/>
+        
+        Fecha de Nacimiento <br/>
+        <input type="date" name="fechaN" id="fechaN" value="" max="2023-10-12"/> <!--Fecha maxima para esta, el dia de entrega del taller-->
+        <br/>
+
+        Edad
+        <p id="mostrarEdad"></p>
+        <br/>
+        
+        ¿Usted ha sufrido alguna enfermedad contagiosa? <br/>
+        <input onchange="mostrar();" type="checkbox" name="sickness" id="sickness" value="Si"> Si <br/>
+        <div id="Panel">
+            <select>
+                <option value="Coronavirus">Coronavirus</option>
+                <option value="Tuberculosis">Tuberculosis</option>
+                <option value="Sarampion">Sarampión</option>
+                <option value="TS">Alguna ETS o ITS</option>
+                <option value="Gripe">Gripe o Influenza</option>
+                <option value="Viruela">Viruela</option>
+                <option value="SARS">SARS</option>
+            </select>
+        </div>
+
+
+        Contraseña <br/>
+        <input type="password" name="contrasena" id="password" value="" size="30" />
+        <br/>
+
+        Confirmar Contraseña <br/>
+        <input type="password" name="comcontrasena" id="Vpassword" value="" size="30" />
+        <br/>
+        
+        <input type="submit"  value="Guardar cambios" />
+        <p class="warnings" id="warnings"></p>
+
+        </form>
+    </div>
+
+    <script src="indexJava.js"></script>
+</body>
+</html>
