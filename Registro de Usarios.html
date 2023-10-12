@@ -37,7 +37,7 @@
                 <label for="sickness">¿Usted ha sufrido alguna enfermedad contagiosa?</label>
                 <input onchange="mostrar();" type="checkbox" name="sickness" id="sickness" value="Si"> Si
                 <div id="Panel">
-                    <select>
+                    <select id="selectill">
                         <option value="Coronavirus">Coronavirus</option>
                         <option value="Tuberculosis">Tuberculosis</option>
                         <option value="Sarampion">Sarampión</option>
@@ -45,7 +45,13 @@
                         <option value="Gripe">Gripe o Influenza</option>
                         <option value="Viruela">Viruela</option>
                         <option value="SARS">SARS</option>
+                        <option value="Otro">Otro</option>
                     </select>
+                    <br/>
+                    <div id="anothertext">
+                        Escriba la enfermedad <br/>
+                        <input type="text" name="otrosick" value="" size="20">
+                    </div>
                 </div>
             </div>
 
