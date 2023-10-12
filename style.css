@@ -58,6 +58,14 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
 }
+a{
+    background-color: #7d9aac;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 .warnings {
     color: red;
@@ -86,37 +94,25 @@ input[type="submit"] {
     text-decoration: underline;
     color: #007bff; /* Cambia el color al pasar el mouse por encima */
 }
-table {
-    width: 100%;
-    border: 1px;;
+
+/* Fondo de la tabla */
+#myTable {
+    background-color: #d3dddc;
 }
 
-th, td {
-    padding: 8px;
-    text-align: left;
-    border: 1px;
-    border-radius: 5px;
+/* Encabezados de la tabla */
+#myTable th {
+    background-color: #7d9aac;
+    color: white;
 }
 
-thead th {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+/* Filas pares */
+#myTable tr:nth-child(even) {
+    background-color: #92a8bd
 }
 
-tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #e6e6e6;
-}
-
-/* Estilos para las celdas con datos en blanco (sin valores) */
-tbody td:empty {
-    background-color: #f8f8f8;
-}
-
-.dataTables_length{
-    text-align: center;
-
+/* Filas impares */
+#myTable tr:nth-child(odd) {
+    background-color: #abbecf;
+    
 }
