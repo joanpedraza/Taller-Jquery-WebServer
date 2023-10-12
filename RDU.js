@@ -99,4 +99,17 @@ sickness.addEventListener("change", function() {
 function ocultar() {
     show = document.getElementById('Panel');
     show.style.display = 'none';
+    showT = document.getElementById("anothertext")
+    showT.style.display = 'none';
 }
+
+document.getElementById("selectill").onchange = function () {
+    if (this.value == 'Otro'){
+        showT = document.getElementById("anothertext")
+        showT.style.display = '';
+    }
+    else{
+        showT = document.getElementById("anothertext")
+        showT.style.display = 'none';
+    }
+  };
