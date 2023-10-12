@@ -62,3 +62,61 @@ input[type="submit"] {
 .warnings {
     color: red;
 }
+
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: #007bff; /* Cambia el color al pasar el mouse por encima */
+}
+table {
+    width: 100%;
+    border: 1px;;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px;
+    border-radius: 5px;
+}
+
+thead th {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e6e6e6;
+}
+
+/* Estilos para las celdas con datos en blanco (sin valores) */
+tbody td:empty {
+    background-color: #f8f8f8;
+}
+
+.dataTables_length{
+    text-align: center;
+
+}

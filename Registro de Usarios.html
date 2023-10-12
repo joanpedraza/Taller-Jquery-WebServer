@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Index</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="ocultar();">
+    <div id="division">
+        <h3>Formulario</h3>
+    
+        <form action="" method="post" id="form">
+        
+        <fieldset><legend>Datos Personales</legend>
+            <div class="input-group">
+                <label for="name">Nombre</label>
+                <input type="text" name="nombre" id="name" value="" size="30" maxlength="25" />
+            </div>
+
+            <div class="input-group">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos" id="apellidos" value="" size="30" maxlength="25" />
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" value="" size="50" maxlength="120" />
+            </div>
+
+            <div class="input-group">
+                <label for="fechaN">Fecha de Nacimiento</label>
+                <input type="date" name="fechaN" id="fechaN" value="" max="2023-10-12" />
+            </div>
+
+            <div class="input-group">
+                <label for="sickness">¿Usted ha sufrido alguna enfermedad contagiosa?</label>
+                <input onchange="mostrar();" type="checkbox" name="sickness" id="sickness" value="Si"> Si
+                <div id="Panel">
+                    <select>
+                        <option value="Coronavirus">Coronavirus</option>
+                        <option value="Tuberculosis">Tuberculosis</option>
+                        <option value="Sarampion">Sarampión</option>
+                        <option value="TS">Alguna ETS o ITS</option>
+                        <option value="Gripe">Gripe o Influenza</option>
+                        <option value="Viruela">Viruela</option>
+                        <option value="SARS">SARS</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Contraseña</label>
+                <input type="password" name="contrasena" id="password" value="" size="30" />
+            </div>
+
+            <div class="input-group">
+                <label for="Vpassword">Confirmar Contraseña</label>
+                <input type="password" name="comcontrasena" id="Vpassword" value="" size="30" />
+            </div>
+        </fieldset>
+        
+        <input type="submit" value="Guardar cambios" />
+        <p class="warnings" id="warnings"></p>
+
+        </form>
+    </div>
+
+    <script src="RDU.js"></script>
+</body>
+</html>
